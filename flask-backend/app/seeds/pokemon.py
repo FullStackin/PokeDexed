@@ -22,22 +22,41 @@ values = [
 ]
 
 names = [
-    "Bulbasaur",
-    "Pidgeotto",
+    "Charmander",
     "Pikachu",
-    "Onyx",
-    "Kingdra"
+    "Farfetch'd",
+    "Gengar",
+    "Alakazam",
+    "Squirtle",
+    "Beedrill",
+    "Dragonite",
+    "Bulbasaur",
+    "Hitmonlee",
+    "Seal",
+    "Pidgeotto",
+    "Gastly",
+    "Sandshrew",
+    "Geodude",
+    "Steelix"
 ]
 
 moves = [
-    "Falcon Punch",
-    "Throat Kick",
     "Flamethrower",
+    "Thunderbolt",
+    "Tackle",
+    "Spite",
+    "Psychic",
     "Water Gun",
-    "Lightning",
-    "Rock Slide",
+    "Horn Drill",
+    "Dragon Rage",
+    "Vine Whip",
+    "Falcon Punch",
+    "Ice Beam",
+    "Fly",
+    "Poison",
     "Sandstorm",
-    "Ice Beam"
+    "Rock Slide",
+    "Harden"
 ]
 
 def seed_pokemon():
@@ -49,7 +68,7 @@ def seed_pokemon():
         name=names[i],
         type=choice(values),
         moves=moves[i]
-    ) for i in range(0, 5)]
+    ) for i in range(0, 16)]
 
     for poke in pokemons:
         db.session.add(poke)

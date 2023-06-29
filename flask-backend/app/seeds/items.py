@@ -8,6 +8,11 @@ names = [
     "Elixir"
     "Megalixir",
     "Rare Candy"
+    "Pokeball",
+    "Ultraball",
+    "Moon Stone",
+    "Quick Claw",
+    "Moo Moo Milk"
 ]
 
 def seed_items(pokemons):
