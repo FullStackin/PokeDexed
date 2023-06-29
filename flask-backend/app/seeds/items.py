@@ -5,14 +5,15 @@ from random import randint, choice
 names = [
     "Potion",
     "Hi Potion",
-    "Elixir"
+    "Elixir",
     "Megalixir",
     "Rare Candy"
     "Pokeball",
     "Ultraball",
     "Moon Stone",
     "Quick Claw",
-    "Moo Moo Milk"
+    "Moo Moo Milk",
+    "Number Ten"
 ]
 
 def seed_items(pokemons):
