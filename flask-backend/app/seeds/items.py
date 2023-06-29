@@ -1,4 +1,4 @@
-from app.models import db, Items
+from ..models import db, Item
 from sqlalchemy.sql import text
 from random import randint, choice
 
@@ -16,13 +16,13 @@ names = [
 ]
 
 def seed_items(pokemons):
-    items = [Items(
+    items = [Item(
         happiness = randint(0, 10),
         imageUrl=f"image{randint(0,100)}.png",
         name=names[i],
         price=randint(100, 500),
         pokemon=choice(pokemons)
-    ) for i in range(0, 5)]
+    ) for i in range(0, 10)]
 
     for item in items:
         db.session.add(item)

@@ -1,4 +1,4 @@
-from app.models import db, Pokemon, PokemonTypes
+from ..models import db, Pokemon
 from sqlalchemy.sql import text
 from random import randint, choice
 
@@ -68,7 +68,7 @@ def seed_pokemon():
         name=names[i],
         type=choice(values),
         moves=moves[i]
-    ) for i in range(0, 16)]
+    ) for i in range(1, 16)]
 
     for poke in pokemons:
         db.session.add(poke)
