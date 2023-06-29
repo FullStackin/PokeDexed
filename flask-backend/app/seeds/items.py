@@ -12,8 +12,7 @@ names = [
     "Ultraball",
     "Moon Stone",
     "Quick Claw",
-    "Moo Moo Milk",
-    "Number Ten"
+    "Moo Moo Milk"
 ]
 
 def seed_items(pokemons):
@@ -23,7 +22,7 @@ def seed_items(pokemons):
         name=names[i],
         price=randint(100, 500),
         pokemon=choice(pokemons)
-    ) for i in range(0, 10)]
+    ) for i in range(len(names))]
 
     for item in items:
         db.session.add(item)

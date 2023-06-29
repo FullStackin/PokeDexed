@@ -66,9 +66,9 @@ def seed_pokemon():
         defense=randint(0, 100),
         imageUrl=f"image{randint(0,100)}.png",
         name=names[i],
-        type=choice(values),
+        type=values[i],
         moves=moves[i]
-    ) for i in range(1, 16)]
+    ) for i in range(len(values))]
 
     for poke in pokemons:
         db.session.add(poke)
